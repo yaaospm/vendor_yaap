@@ -102,6 +102,25 @@ soong_config_module_type {
 }
 
 soong_config_module_type {
+    name: "camera_boottime_timestamp",
+    module_type: "cc_defaults",
+    config_namespace: "nadQcomVars",
+    bool_variables: ["needs_camera_boottime_timestamp"],
+    properties: [
+        "cflags",
+    ],
+}
+
+camera_boottime_timestamp {
+    name: "needs_camera_boottime",
+    soong_config_variables: {
+        needs_camera_boottime_timestamp: {
+            cflags: ["-DTARGET_CAMERA_BOOTTIME_TIMESTAMP"],
+        },
+    },
+}
+
+soong_config_module_type {
     name: "camera_skip_kind_check",
     module_type: "cc_defaults",
     config_namespace: "lineageGlobalVars",
