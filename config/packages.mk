@@ -1,5 +1,6 @@
 PRODUCT_PACKAGES += \
     ThemePicker \
+    GameSpace
 
 # Extra tools in YAAP
 PRODUCT_PACKAGES += \
