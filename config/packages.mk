@@ -22,6 +22,7 @@ ifneq ($(TARGET_BUILD_GAPPS),true)
 PRODUCT_PACKAGES += \
     Apps \
     Etar \
+    ExactCalculator \
     GmsCompat \
     Jelly \
     LatinIME \
